@@ -1,0 +1,82 @@
+.women {
+  display: flex;
+  width: 100vw;
+  /* height:40vh; */
+  /* flex:1; */
+}
+
+.group1 {
+  height: 40vh;
+  position: relative;
+  width: 100vw;
+}
+.women_image {
+  background-image: url(../images/women.png);
+  background-size: cover;
+  display: flex;
+  height: 40.2vh;
+  object-fit: contain;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.color1 {
+  background: linear-gradient(
+    263.87deg,
+    rgba(60, 79, 224, 0.15) 4.67%,
+    rgba(1, 15, 124, 0.38) 94%
+  );
+  flex: 1;
+  margin-left: 0;
+  margin-bottom: 0;
+  opacity: 0.38;
+  width: 100vw;
+}
+
+.whiteboard {
+  background-color: white;
+  height: 28vh;
+  left: 40px;
+  position: absolute;
+  top: calc(35vh - 200px);
+  width: 83.5vw;
+}
+.women_heading {
+  left: 65px;
+  letter-spacing: 0;
+  line-height: 68px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  white-space: nowrap;
+
+  font-size: 22px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.women_paragraph {
+  left: 10px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 60px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.know_more {
+  position: absolute;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  top: 280px;
+  left: 65px;
+}
+.know_more p {
+  margin: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
