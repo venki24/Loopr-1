@@ -44,13 +44,12 @@ function Offerings() {
           {/* <Monitor2 className={classes.monitor2_svg}/> */}
           <h3>02</h3>
           <div className={ classes.arrow_usp}>
-          <span className={ classes.loopr_data}>Loopr Data</span><span><FontAwesomeIcon icon={faArrowRight}/></span>
+          <span className={ classes.loopr_data}>Loopr Models</span><span><FontAwesomeIcon icon={faArrowRight}/></span>
           </div>
           <div className={classes.monitor2_p}>
             <p>
-              Every AI model needs high quality data.And Loopr equips your team
-              with the best labeling tools for quicker,convenient,and more
-              efficient data annotation.
+            Ready to use and customizable deep learning models that help businesses implement intelligent processes for a variety of use cases in less than 8 weeks.
+
             </p>
           </div>
         </div>

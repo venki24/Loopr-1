@@ -141,7 +141,7 @@ const Layout = ({ children }) => {
                    </span>
                    <span className={styles.span_email}>email@loopr.com</span> */}
                   <p>
-                    <FontAwesomeIcon icon={faEnvelope} /> email@loopr.com
+                    <FontAwesomeIcon icon={faEnvelope} /> &nbsp; email@loopr.com
                   </p>
                 </a>
               </li>

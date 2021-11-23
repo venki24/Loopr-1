@@ -1,10 +1,11 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   width:100%;
-}
+} */
+
 
 .nav1 {
   display: flex;
@@ -35,14 +36,14 @@
 .rectangle {
   border: 1px solid #fff;
   height: 20px;
-  right: 6rem;
+  right: 3rem;
   position: absolute;
   top: 15px;
   width: 25px;
 }
 .dial {
   height: 14px;
-  right:6.3rem;
+  right:3.4rem;
   object-fit: cover;
   position: absolute;
   top: 19px;
