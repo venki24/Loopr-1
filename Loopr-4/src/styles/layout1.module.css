@@ -3,21 +3,24 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  width:100%;
 }
 
 .nav1 {
   display: flex;
   height: 25px;
   left: 0;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 1;
 }
 .nav_items {
+  /* display:flex; */
+  
   height: 25px;
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 .logo {
@@ -32,14 +35,14 @@
 .rectangle {
   border: 1px solid #fff;
   height: 20px;
-  left: 311px;
+  right: 6rem;
   position: absolute;
   top: 15px;
   width: 25px;
 }
 .dial {
   height: 14px;
-  left: 318px;
+  right:6.3rem;
   object-fit: cover;
   position: absolute;
   top: 19px;
@@ -49,7 +52,7 @@
 .banner {
   display: flex;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-image: url(../images/mask_group.png);
   background-size: cover;
   position: "relative";
@@ -63,7 +66,7 @@
   );
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   padding: 28px 24px;
   width: 100vw;
 }
@@ -79,7 +82,7 @@
   min-height: 213px;
   padding: 23px 27px;
   position: absolute;
-  width: 310px;
+  width: 90%;
 }
 .group2 {
   height: 122px;
@@ -150,13 +153,40 @@
 }
 
 .footer {
-  height: 86vh;
-  width: auto;
+  height: 83vh;
+  
+  width: 100vw;
   background: black;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+@media (min-width:374px) and (max-width:412px){
+.footer{
+  height: 77vh;
+  
+  width: 100vw;
+  background: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+}
+@media (max-width:320px){
+  .footer{
+    height: 94vh;
+  
+  width: 100vw;
+  background: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  }
+  
 }
 .footer h1 {
   font-size: 30px;
@@ -175,7 +205,7 @@
 
 .footer input {
   height: 40px;
-  width: 340px;
+  width: 90%;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -189,9 +219,9 @@
 }
 
 .footer button {
-  height: 40px;
-  width: 340px;
-  margin-left: auto;
+  height: 5.5vh;
+  width: 90%;
+  margin-left:auto;
   margin-right: auto;
   color: white;
   background: blue;
@@ -207,6 +237,7 @@
 }
 
 .content ul li {
+  display:flex;
   padding: 15px;
   list-style: none;
   padding-bottom: 10px;
@@ -219,24 +250,30 @@
   cursor: pointer;
 }
 .ul_right ul li {
-  padding: 15px;
+  display:flex;
+  justify-content: space-between;
+  /* padding: 5px; */
   list-style: none;
   padding-bottom: 10px;
 }
-.ul_right ul li a {
+.ul_right ul li a{
   text-decoration: none;
-  padding: 5px;
-  font-size: 15px;
+}
+.ul_right ul li a p{
+  display:flex;
+  text-decoration: none;
+  /* padding: 5px; */
+  font-size: 0.8rem;
   color: white;
   cursor: pointer;
 }
-.ul_right ul li a span{
-  padding:5px;
-}
+/* .ul_right ul li a span{
+  padding:0.2rem;
+} */
 
-.span_email{
+/* .span_email{
   font-size: 14.5px;
-}
+} */
 .scroll_arrow{
   font-size: 16px;
   font-weight: 50;

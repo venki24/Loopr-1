@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
+import * as styles from '../styles/index.module.css';
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Offerings from "../components/Offerings"

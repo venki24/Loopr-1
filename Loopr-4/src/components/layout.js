@@ -49,7 +49,10 @@ const Layout = ({ children }) => {
           </div>
           <div className={styles.scroll_div}>
             <div className={styles.scroll}>
-              <span>Scroll</span> <span className={styles.scroll_arrow}><FontAwesomeIcon icon={faArrowDown}/></span>
+              <span>Scroll</span>{" "}
+              <span className={styles.scroll_arrow}>
+                <FontAwesomeIcon icon={faArrowDown} />
+              </span>
             </div>
           </div>
         </div>
@@ -62,24 +65,27 @@ const Layout = ({ children }) => {
               <div className={styles1.color1}></div>
             </div>
             <div className={styles1.whiteboard}>
+              <div className={styles1.group_2}>
               <h1 className={styles1.women_heading}>Empowering women</h1>
               <p className={styles1.women_paragraph}>
-                Loopr's Data Annotation team is empowered by <br />
-                women from disadvantaged backgrounds.Our <br />
+                Loopr's Data Annotation team is empowered by 
+                women from disadvantaged backgrounds.Our 
                 proud partners in the data labelling processes,
-                <br />
-                these women are helping bussinesses of all sizes <br />
+                these women are helping bussinesses of all sizes 
                 to grow using intelligent automation.
                 <div className={styles.know_more}>
-                <span>Know More</span><span><FontAwesomeIcon icon={faArrowRight}/></span>
+                  <span>Know More</span>
+                  <span>
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </span>
                 </div>
               </p>
-              
+              </div>
             </div>
 
             {/* <div className={styles.know_more}>
-            
-          </div> */}
+             
+           </div> */}
           </div>
         </div>
       </div>
@@ -126,28 +132,37 @@ const Layout = ({ children }) => {
             <ul>
               <li>
                 <a href="#">
-                  <span>
-                    <FontAwesomeIcon
-                    icon={faEnvelope}
-                    // size="1x"
-                    
-                  />
-                  </span>
-                  <span className={styles.span_email}>email@loopr.com</span>
+                  {/* <span>
+                     <FontAwesomeIcon
+                     icon={faEnvelope}
+                     // size="1x"
+                     
+                   />
+                   </span>
+                   <span className={styles.span_email}>email@loopr.com</span> */}
+                  <p>
+                    <FontAwesomeIcon icon={faEnvelope} /> email@loopr.com
+                  </p>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  
-                  <span><FontAwesomeIcon icon={faPhone} size="0x" rotation="90" /></span>
-                  <span>+91 9934579764</span>
+                  <p>
+                    <FontAwesomeIcon icon={faPhone} size="0x" rotation="90" />{" "}
+                    &nbsp; +91 9088242425
+                  </p>
+                  {/* <span></span>
+                   <span>+91 9934579764</span> */}
                 </a>
               </li>
               <li>
                 <a href="#">
-                  
-                  <span><FontAwesomeIcon icon={faPhone} size="0x" rotation="90" /></span>
-                  <span>+91 9842329003</span>
+                  <p>
+                    <FontAwesomeIcon icon={faPhone} size="0x" rotation="90" />{" "}
+                    &nbsp; +91 9088242425
+                  </p>
+                  {/* <span><FontAwesomeIcon icon={faPhone} size="0x" rotation="90" /></span>
+                   <span>+91 9842329003</span> */}
                 </a>
               </li>
               <li>

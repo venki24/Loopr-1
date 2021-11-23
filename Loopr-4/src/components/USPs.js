@@ -1,62 +1,71 @@
-import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import * as classes from "../styles/usps.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import Monitor1 from "../images/SVGs/Monitor1";
-import Monitor2 from "../images/SVGs/Monitor2";
+import * as styles from "../styles/usps.module.css";
+import { StaticImage } from "gatsby-plugin-image"
+import Rect from "../images/SVGs/rect"
+import Piggy from "../images/SVGs/piggy";
+import Badge from "../images/SVGs/badge";
 function USPs() {
   return (
-    <div>
-      <div className={classes.background_color}>
-        <div className={classes.header}>
-          <h2>Offerings</h2>
+    <>
+    <div  className={styles.main}>
+      <div className={styles.color1}>
+        <div className={styles.header}>
+          <h1>Our USPs</h1>
           <p>
-            Loopr offers end-to-end solutions in the AI lifecyle, from data
-            labeling to creating customized models as per your business
-            requirements.{" "}
+            We aim to improve our client's overall bussiness <br />
+            processes and bottom line with every product we have.
           </p>
         </div>
-        <div className={classes.monitor1}>
-          {/* <StaticImage
-            src="../images/monitor2.png"
-            alt="img"
-            className={classes.img1}
-          /> */}
-          <Monitor1/>
-          <h3>01</h3>
-          <div className={ classes.arrow_usp}>
-            <span className={ classes.loopr_data}>Loopr Data</span><span><FontAwesomeIcon icon={faArrowRight}/></span> 
+        <div className={styles.one}>
+          <div className={styles.one_img}>
+            {/* <StaticImage
+              src="../images/badge3.png"
+              alt="badge"
+              className={styles.badge3}
+            /> */}
+            <Badge height={70} width={70}/>
           </div>
-
-          <p>
-            Every AI model needs high quality data. And Loopr equips your team
-            with the best labeling tools for quicker, convenient, and more
-            efficient data annotation.
-          </p>
-        </div>
-        <div className={classes.monitor2}>
-          {/* <StaticImage
-            src="../images/monitor1.png"
-            alt="img"
-            className={classes.img2}
-          /> */}
-          <Monitor2 className={classes.monitor2_svg}/>
-          <h3>02</h3>
-          <div className={ classes.arrow_usp}>
-          <span className={ classes.loopr_data}>Loopr Data</span><span><FontAwesomeIcon icon={faArrowRight}/></span>
-          </div>
-          <div className={classes.monitor2_p}>
+          <div>
+            <h3>01</h3>
+            <h1>Quality</h1>
             <p>
-              Every AI model needs high quality data.And Loopr equips your team
-              with the best labeling tools for quicker,convenient,and more
-              efficient data annotation.
+              Best in class labelling tools and models along with a skilled data
+              annotation team.
+            </p>
+          </div>
+        </div>
+        <div className={styles.two}>
+          <div className={styles.two_img}>
+            {/* <StaticImage src="../images/rect2.jpg" alt="react" /> */}
+            <Rect width={70} height={70}/>
+          </div>
+          <div>
+            <h3>02</h3>
+            <h1>Scalability</h1>
+            <p>
+              We offer an adaptable solution to meet your workflow needs,
+              letting you easily scale and switch capacity.
+            </p>
+          </div>
+        </div>
+        <div className={styles.three}>
+          <div className={styles.three_img}>
+            {/* <StaticImage src="../images/pig2.jpg" alt="piggy bank" /> */}
+            <Piggy width={70} height={70}/>
+          </div>
+          <div>
+            <h3>03</h3>
+            <h1>Cost effective</h1>
+            <p>
+              An affordable solution covering data workflows, labelling and
+              implementing deep learning models.
             </p>
           </div>
         </div>
       </div>
     </div>
+    </>
   )
 }
 
-export default USPs
+export default USPs;
